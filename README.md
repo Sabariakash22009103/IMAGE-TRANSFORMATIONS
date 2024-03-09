@@ -25,59 +25,133 @@ Anaconda - Python 3.7
 
 ## Program:
 ```python
-Developed By:
-Register Number:
-i)Image Translation
+# Developed By: Sabari Akash A
+# Register Number: 212222230124
+# i)Image Translation
+import numpy as np
+import cv2
+import matplotlib.pyplot as plt
+input_image=cv2.imread("got.jpg") 
+input_image=cv2.cvtColor(input_image,cv2.COLOR_BGR2RGB) 
+plt.axis("off") 
+plt.imshow(input_image)
+plt.show()
+rows, cols, dim = input_image.shape
+M_x=np.float32([[1,0,0 ],
+                [0,-1,rows],
+                [0,0,1 ]])
+M_y=np.float32([[-1,0,cols ],
+                [0,1,0],
+                [0,0,1 ]])
+reflected_img_xaxis=cv2.warpPerspective(input_image,M_x,(cols,rows))
+reflected_img_yaxis=cv2.warpPerspective(input_image,M_y,(cols,rows))
+plt.imshow(reflected_img_xaxis)
+plt.show()
 
 
-ii) Image Scaling
+# ii) Image Scaling
+import numpy as np
+import cv2
+import matplotlib.pyplot as plt
+input_image=cv2.imread("got.jpg") 
+input_image=cv2.cvtColor(input_image, cv2.COLOR_BGR2RGB)
+angle=np.radians(45)
+M=np.float32([[np.cos(angle),-(np.sin(angle)),0],
+               [np.sin(angle),(np.cos(angle)),0],
+               [0,0,1]])
+rotated_img=cv2.warpPerspective(input_image, M, (int(cols),int(rows)))
 
+#iii)Image shearing
+import numpy as np
+import cv2
+import matplotlib.pyplot as plt
+input_image=cv2.imread("download.jpeg") 
+input_image=cv2.cvtColor(input_image,cv2.COLOR_BGR2RGB) 
+plt.axis("off") 
+plt.imshow(input_image)
+plt.show()
+rows, cols, dim = input_image.shape
+M_x=np.float32([[1,0.2,0],
+               [0,1,0],
+               [0,0,1]])
+M_y=np.float32([[1, 0, 0],
+                [0.5, 1, 0],
+                [0,0,1]])
+sheared_img_xaxis=cv2.warpPerspective(input_img,M_x,(cols,rows))
+sheared_img_yaxis=cv2.warpPerspective(input_img,M_y,(cols,rows))
+plt.axis('off')
+plt.imshow(sheared_img_xaxis)
+plt.show()
+plt.axis
+plt.show()
 
+#iv)Image Reflection
 
-iii)Image shearing
-
-
-
-iv)Image Reflection
-
-
-
-
-v)Image Rotation
-
-
-
-
-vi)Image Cropping
-
-
-
-
+import numpy as np
+import cv2
+import matplotlib.pyplot as plt
+input_image=cv2.imread("download.jpeg") 
+input_image=cv2.cvtColor(input_image,cv2.COLOR_BGR2RGB) 
+plt.axis("off") 
+plt.imshow(input_image)
+plt.show()
+rows, cols, dim = input_image.shape
+M_x=np.float32([[1,0,0 ],
+                [0,-1,rows],
+                [0,0,1 ]])
+M_y=np.float32([[-1,0,cols ],
+                [0,1,0],
+                [0,0,1 ]])
+reflected_img_xaxis=cv2.warpPerspective(input_image,M_x,(cols,rows))
+reflected_img_yaxis=cv2.warpPerspective(input_image,M_y,(cols,rows))
+plt.imshow(reflected_img_xaxis)
+plt.show()
+plt.imshow(reflected_img_yaxis)
+plt.show()
+# v)Image Rotation
+import numpy as np
+import cv2
+import matplotlib.pyplot as plt
+input_image=cv2.imread("got.jpg") 
+input_image=cv2.cvtColor(input_image, cv2.COLOR_BGR2RGB)
+angle=np.radians(45)
+M=np.float32([[np.cos(angle),-(np.sin(angle)),0],
+               [np.sin(angle),(np.cos(angle)),0],
+               [0,0,1]])
+rotated_img=cv2.warpPerspective(input_image, M, (int(cols),int(rows)))
+# vi)Image Cropping
+import numpy as np
+import cv2
+import matplotlib.pyplot as plt
+input_image=cv2.imread("download.jpeg") 
+input_image=cv2.cvtColor(input_image,cv2.COLOR_BGR2RGB)
+cropped_img=input_image[100:300, 100:300]
+plt.imshow(cropped_img)
 
 ```
 ## Output:
 ### i)Image Translation
-<br>
+<br><img src=image.png width=300 height=400>
 <br>
 <br>
 <br>
 
 ### ii) Image Scaling
-<br>
+<br><img src=image-1.png width=300 height=400>
 <br>
 <br>
 <br>
 
 
 ### iii)Image shearing
-<br>
+<br><img src=image.png width=300 height=400>
 <br>
 <br>
 <br>
 
 
 ### iv)Image Reflection
-<br>
+<br><img src=image-2.png width=300 height=400>
 <br>
 <br>
 <br>
@@ -85,7 +159,7 @@ vi)Image Cropping
 
 
 ### v)Image Rotation
-<br>
+<br><img src=image-3.png width=300 height=400>
 <br>
 <br>
 <br>
@@ -93,7 +167,7 @@ vi)Image Cropping
 
 
 ### vi)Image Cropping
-<br>
+<br><img src=image-4.png width=300 height=400>
 <br>
 <br>
 <br>
