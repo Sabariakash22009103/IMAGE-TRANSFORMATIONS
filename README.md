@@ -9,25 +9,29 @@ Anaconda - Python 3.7
 
 ## Algorithm:
 ### Step1:
-<br>
+Import the required packages.
 
 ### Step2:
-<br>
+Load the image file in the program.
 
 ### Step3:
-<br>
+Use the techniques for Translation, Scaling, Shearing, Reflection, Rotation and Cropping using OpenCV and Python.
 
 ### Step4:
-<br>
+Display the modified image output.
 
 ### Step5:
-<br>
+End the program.
+
+
 
 ## Program:
 ```python
 # Developed By: Sabari Akash A
 # Register Number: 212222230124
 # i)Image Translation
+```
+```py
 import numpy as np
 import cv2
 import matplotlib.pyplot as plt
@@ -131,49 +135,22 @@ plt.imshow(cropped_img)
 ```
 ## Output:
 ### i)Image Translation
-<br><img src=image.png width=300 height=400>
-<br>
-<br>
-<br>
+<br><img src=image.png width=300 height=300>
 
 ### ii) Image Scaling
-<br><img src=image-1.png width=300 height=400>
-<br>
-<br>
-<br>
-
+<br><img src=image-1.png width=300 height=300>
 
 ### iii)Image shearing
-<br><img src=image.png width=300 height=400>
-<br>
-<br>
-<br>
-
+<br><img src=image.png width=300 height=300>
 
 ### iv)Image Reflection
 <br><img src=image-2.png width=300 height=400>
-<br>
-<br>
-<br>
-
-
 
 ### v)Image Rotation
-<br><img src=image-3.png width=300 height=400>
-<br>
-<br>
-<br>
-
-
+<br><img src=image-3.png width=300 height=300>
 
 ### vi)Image Cropping
-<br><img src=image-4.png width=300 height=400>
-<br>
-<br>
-<br>
-
-
-
+<br><img src=image-4.png width=300 height=300>
 
 ## Result: 
 
