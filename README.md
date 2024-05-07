@@ -1,4 +1,4 @@
-# Exp-03 IMAGE TRANSFORMATIONS
+# Exp-04 IMAGE TRANSFORMATIONS
 ## Aim
 To perform image transformation such as Translation, Scaling, Shearing, Reflection, Rotation and Cropping using OpenCV and Python.
 
