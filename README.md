@@ -1,6 +1,4 @@
-# IMAGE-TRANSFORMATIONS
-
-
+# Exp-03 IMAGE TRANSFORMATIONS
 ## Aim
 To perform image transformation such as Translation, Scaling, Shearing, Reflection, Rotation and Cropping using OpenCV and Python.
 
@@ -153,5 +151,4 @@ plt.imshow(cropped_img)
 <br><img src=image-4.png width=300 height=300>
 
 ## Result: 
-
 Thus the different image transformations such as Translation, Scaling, Shearing, Reflection, Rotation and Cropping are done using OpenCV and python programming.
